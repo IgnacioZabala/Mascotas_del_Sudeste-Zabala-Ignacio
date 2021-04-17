@@ -1,0 +1,305 @@
+.body__index {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/heroimageopacidad.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 300;
+    text-decoration: none;
+    overflow: hidden;
+}
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 300;
+}
+
+.header__index {
+    background-color: rgba(24, 24, 24, 0.336);
+    font-size: auto;
+}
+.header__all {
+    background-color: #6024ec57;
+    font-size: auto;
+}
+.header {
+    font-size: 20px;
+}
+#btn_menu {
+    display: none;
+}
+header label {
+    display: none;
+    width: 30px;   
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav__bar__index__hamburguer ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+.nav__bar__index__hamburguer li {
+    text-align: center;
+    flex-grow: 1;
+}
+.nav__bar__index__hamburguer li:hover {
+    background-color: #6024ecab;
+}
+.nav__bar__index__hamburguer li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:768px) {
+    header label {
+        display: block;
+    }
+    .nav__bar__index__hamburguer {
+        position: absolute;
+        background: rgba(12, 12, 12, 0.685);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .nav__bar__index__hamburguer ul {
+        flex-direction: column;
+    }
+    .nav__bar__index__hamburguer li {
+        border-top: 1px solid #fff;
+    }
+
+    #btn_menu:checked ~ .nav__bar__index__hamburguer {
+        margin: 0;
+    } 
+}
+
+.logo__index {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.contactanos {
+    list-style: none;
+}  
+
+.nav__bar li a:hover {
+    color: #6124ec;
+}
+
+.heroimage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer__index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem;
+    position: relative;
+    bottom: 0;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem;
+    position: relative;
+    bottom: 0;
+}
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+@media only screen and (max-width: 480px) {
+    .wrap {
+        display:grid;
+        grid-template-columns: auto;
+    }    
+}
+@media only screen and (max-width: 600px) {
+    .wrap {
+        display:grid;
+        grid-template-columns: auto;
+    }    
+}
+@media only screen and (max-width: 768px) {
+    .wrap {
+        display:grid;
+        grid-template-columns: repeat(2, auto);
+    }    
+}
+@media only screen and (max-width: 1024px) {
+    .wrap {
+        display:grid;
+        grid-template-columns: repeat(3, auto);
+    }    
+}
+@media only screen and (max-width: 1200px) {
+    .wrap {
+        display:grid;
+        grid-template-columns: repeat(3, auto);
+    }    
+}
+
+.main__index {
+    display:grid;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.tarjeta__wrap {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.8s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65); 
+}
+.frente, .fondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.frente {
+    width: 100%;
+}
+
+.fondo {
+    transform: rotateY(180deg);
+}
+.tarjeta__wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+
+}
+.aportes__tarjetas {
+    margin: 15px 15px 15px -15px;
+    list-style: none;
+    text-align: justify;
+}
+
+.logo__tarjeta__vc {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.logo__tarjeta__hop {
+    width: 85px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.logo__tarjeta__bc {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.logo__tarjeta__pv {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.tarjeta1 {
+    background-image: url(image/premium_adulto.jpg);
+    background-size: cover;
+}
+.tarjeta2 {
+    background-image: url(image/premium_cachorro.jpg);
+    background-size: cover;
+}
+.tarjeta3 {
+    background-image: url(image/VitalCan\ Premium\ Perros\ Adultos\ Razas\ Pequeñas.png);
+    background-size: cover;
+}
+.tarjeta4 {
+    background-image: url(image/HOP!\ Perros\ Adultos\ Razas\ Medianas-Grandes.png);
+    background-size: cover;
+}
+.tarjeta5 {
+    background-image: url(image/HOP!\ Perros\ Adultos\ Razas\ Pequeñas.png);
+    background-size: cover;
+}
+.tarjeta6 {
+    background-image: url(image/belcan_adulto.jpg);
+    background-size: cover;
+}
+.tarjeta7 {
+    background-image: url(image/belcan_junior.jpg);
+    background-size: cover;
+}
+.tarjeta8 {
+    background-image: url(image/Perro\ Cachorro\ chico\ PERFIL2\ x21.png);
+    background-size: cover;
+}
+.tarjeta9 {
+    background-image: url(image/hop-perros-cachorros-razasgdes1-cd04b18953aa86c3a915900659529894-1024-1024.png);
+    background-size: cover;
+}
+.tarjeta10 {
+    background-image: url(image/AP_alta_fondo\ blanco.jpg);
+    background-size: cover;
+}
+.tarjeta11 {
+    background-image: url(image/PROVET\ Perros\ Cachorros\ RazasMedYGrandes.png);
+    background-size: cover;
+}
+.tarjeta12 {
+    background-image: url(image/PROVET\ Perros\ Adultos.png);
+    background-size: cover;
+}
+.card__cat1 {
+    background-image: url(image/premium_gato_adulto.jpg);
+    background-size: cover;
+}
+.card__cat2 {
+    background-image: url(image/VitalCan\ Premium\ Gatos\ Cachorros.jpg);
+    background-size: cover;
+}
+.card__cat3 {
+    background-image: url(image/HOP!\ Gatos\ Adultos.png);
+    background-size: cover;
+}
+.card__cat4 {
+    background-image: url(image/HOP!\ Gatos\ Cachorros.png);
+    background-size: cover;
+}

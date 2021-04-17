@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/Logo-MdS.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/84d0d37561.js" crossorigin="anonymous"></script>
+    <title>Mascotas del Sudeste</title>
+</head>
+<body class="body">
+
+    <header class="header__all">
+        <input type="checkbox" id="btn_menu">
+        <label for="btn_menu"><img src="image/Hamburguer.png" alt=""></label>
+        <nav class="nav__bar__index__hamburguer">
+            <ul>
+                <li><img src="image/logomds.png" alt="Logo MDS" class="logo__index"></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perros.html">Perros</a></li>
+                <li><a href="gatos.html">Gatos</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <div class="grid">
+        <h1 class="contacto">CONTACTO</h1>
+        <h3>CONTACTANOS</h3>
+        <div class="contactanos">
+            <ul class="contactanos">
+                <li>Horario de atención: Lun a Vie de 8 a 18hs</li> <br>
+                <li><i class="fas fa-phone-alt"></i> 249-459-9381</li> <br>
+                <li><i class="fas fa-envelope"></i> mascotasdelsudeste@gmail.com</li> <br>
+                <li><i class="fas fa-map-marker-alt"></i> Parque Industrial Tandil</li> <br>
+            </ul>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.075628178327!2d-59.182538084628035!3d-37.29334137984982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9591219bb7bf91b3%3A0x1801e37bc58c3592!2sPRE%20MiN%20Nutrici%C3%B3n%20Animal!5e0!3m2!1ses-419!2sar!4v1615664485360!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <h3>¿Tenes alguna duda?</h3>
+            <form action="contacto.html" method="POST">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre"> <br>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" placeholder="Email"> <br>
+                <select name="Tipo de cliente"> <br>
+                    <option value="1">Veterinaria</option>
+                    <option value="2">Criadores</option>
+                    <option value="3">Dueño de mascota</option>
+                </select> <br>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su mensaje..."></textarea> <br>
+                <Label for="newsletter">¿Desea recibir el Newsletter?</Label>
+                <input type="checkbox" name="newsletter" id=""> <br>
+                <input type="reset" value="Limpiar formulario">
+                <input type="submit" value="Enviar">
+            </form>
+    </div>
+    <footer class="footer">
+        <div>
+            <h3>Mapa del sitio</h3>
+            <h4>Perros</h4>
+            <a href="#">Provet</a>
+            <a href="#">UltraPro</a>
+            <a href="#">Premium</a>
+            <a href="#">Balance</a>
+            <a href="#">HOP!</a>
+            <a href="#">Belcan</a>
+        </div>
+        <div>
+            <h4>Gatos</h4>
+            <a href="#">Premium</a>
+            <a href="#">HOP!</a>
+            <a href="#">Belcat</a>
+        </div>
+        <div>
+            <h3>Seguinos</h3>
+            <a href="#">Logo facebook</a>
+            <a href="#">Logo Instagram</a>
+        </div>
+        <div>
+            <p>Mascotas del Sudeste © 2020 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
